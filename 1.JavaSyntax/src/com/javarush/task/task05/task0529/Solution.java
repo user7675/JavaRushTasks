@@ -9,6 +9,12 @@ import java.io.InputStreamReader;
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader readerA = new BufferedReader(new InputStreamReader(System.in));
+        int result = 0;
+        String a;
+        while (! ("сумма".equals(a = readerA.readLine())) ) {
+            result += Integer.parseInt(a);
+        }
+        System.out.println(result);
     }
 }
